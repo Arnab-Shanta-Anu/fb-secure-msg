@@ -1,19 +1,21 @@
 {
 
-    "manifest_version": 2,
-    "name": "fb-secure-msg",
-    "version": "1.0",
+  "manifest_version": 2,
+  "name": "fb-secure-msg",
+  "version": "1.0",
 
-  
-    "content_scripts": [
-      {
-        "matches": ["https://www.facebook.com/messages/*"],
-        "js": ["fb-secure-msg.js"]
-      }
+  "permissions": [
+      "https://www.facebook.com/*"
     ],
 
-    "permissions": [
-        "https://www.facebook.com/*"
-      ]
-  
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/messages/*"],
+      "js": ["fb-secure-msg.js"]
+    }
+  ],
+
+  "background": {
+    "scripts":["background.js"]
   }
+}
