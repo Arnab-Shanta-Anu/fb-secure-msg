@@ -11,3 +11,5 @@ x.addEventListener('keyup',print);
 function print(){
     console.log(x.innerText);
 }
+
+
