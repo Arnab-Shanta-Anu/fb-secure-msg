@@ -6,7 +6,10 @@
 
   "permissions": [
       "https://www.facebook.com/*",
-      "tabs"
+      "<all_urls>",
+      "tabs",
+      "webRequest",
+      "webRequestBlocking"
   ],
 
   "browser_action": {
@@ -22,5 +25,6 @@
 
   "background": {
     "scripts":["background.js"]
-  }
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
