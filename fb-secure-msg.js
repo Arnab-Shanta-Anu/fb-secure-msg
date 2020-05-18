@@ -24,6 +24,5 @@ chrome.runtime.onConnect.addListener(function (port) {
   port.onMessage.addListener(function (msg) {
     console.log(msg.message);
     port.postMessage({ message: "hello ag" });
-    return true;
   });
 });
