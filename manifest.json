@@ -14,7 +14,7 @@
   "browser_action": {
     "default_icon": "logo.png",
     "default_popup": "popup.html",
-    "default_titile": "click to encrypt"
+    "default_title": "click to encrypt"
   },
 
   "content_scripts": [
