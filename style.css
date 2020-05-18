@@ -1,0 +1,23 @@
+body {
+  min-width: 300px;
+  min-height: 300px;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+}
+.text-n-select {
+  display: flex;
+}
+button {
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  align-self: center;
+}
+.show-copy {
+  display: flex;
+}
+.copy {
+  align-self: flex-start;
+}

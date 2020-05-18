@@ -1,19 +1,20 @@
 {
-
   "manifest_version": 2,
   "name": "fb-secure-msg",
   "version": "1.0",
 
   "permissions": [
-      "https://www.facebook.com/*",
-      "<all_urls>",
-      "tabs",
-      "webRequest",
-      "webRequestBlocking"
+    "https://www.facebook.com/*",
+    "<all_urls>",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking"
   ],
 
   "browser_action": {
-    "default_icon": "logo.png"
+    "default_icon": "logo.png",
+    "default_popup": "popup.html",
+    "default_titile": "click to encrypt"
   },
 
   "content_scripts": [
@@ -24,7 +25,7 @@
   ],
 
   "background": {
-    "scripts":["background.js","background-my.js"]
+    "scripts": ["background.js", "background-my.js"]
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }

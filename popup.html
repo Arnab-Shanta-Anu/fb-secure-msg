@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body">
+      <div class="text-n-select">
+        <input type="text" name="" id="" placeholder="Enter text..." />
+        <br /><br />
+        <!--Encryption options-->
+        <select id="enc">
+          <option value="AES"></option>
+          <option value="Blow">Blow Fish</option>
+          <option value="RSA">RSA</option>
+          <option value="Fish2">2 Fish</option>
+          <option value="Rot-13" selected>Sequential ROT-13</option>
+          <option value="scrumble">scrumble</option>
+        </select>
+      </div>
+      <br /><br />
+      <!--send button-->
+      <button name="" id="" class="btn">encrypt!</button>
+      <br /><br />
+      <div class="show-copy">
+        <textarea name="" id="" cols="30" rows="10" disabled>
+            encrypted text
+        </textarea>
+        <button class="copy">copy</button>
+      </div>
+    </div>
+  </body>
+</html>
